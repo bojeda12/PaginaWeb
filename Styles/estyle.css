@@ -1,22 +1,67 @@
+/* ===== Estilos Generales ===== */
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(135deg, #FFB6C1, #FFC0CB, #FF69B4);
   font-family: 'Poppins', sans-serif;
   color: #fff;
   text-align: center;
 }
 
-.contenedor {
+/* ===== Navegación ===== */
+header {
+  width: 100%;
   background: rgba(255, 255, 255, 0.1);
-  padding: 50px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FFEBF0;
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+
+/* ===== Contenedor principal ===== */
+.contenedor {
+  margin-top: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 60px;
   border-radius: 25px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
+  display: inline-block;
 }
 
 h1 {
@@ -31,20 +76,23 @@ p {
   color: #fff8f8;
 }
 
+/* ===== Botón Registrar ===== */
 .btn-registrar {
   background: #fff;
   color: #FF69B4;
   border: none;
-  padding: 12px 28px;
+  padding: 14px 32px;
   border-radius: 30px;
   font-size: 1.1em;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .btn-registrar:hover {
   background: #FF69B4;
   color: #fff;
   box-shadow: 0 0 15px #ffb6c1;
+  transform: scale(1.05);
 }
