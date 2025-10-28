@@ -96,3 +96,73 @@ p {
   box-shadow: 0 0 15px #ffb6c1;
   transform: scale(1.05);
 }
+/* ===== Formulario ===== */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.campo {
+  position: relative;
+  width: 300px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.campo input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+.campo label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.campo input:focus + label,
+.campo input:valid + label {
+  top: -10px;
+  left: 20px;
+  font-size: 0.9em;
+  color: #ffebf0;
+}
+
+/* ===== Botón Registrar ===== */
+.btn-registrar {
+  background: #fff;
+  color: #FF69B4;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-registrar:hover {
+  background: #FF69B4;
+  color: #fff;
+  box-shadow: 0 0 15px #ffb6c1;
+  transform: scale(1.05);
+}
