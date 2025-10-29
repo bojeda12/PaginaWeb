@@ -1,53 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Abarrotes La Única</title>
-  <link rel="stylesheet" href="styles/estyle.css">
+  <title>Contacto - Florería Rosabella</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Styles/estyle.css">
 </head>
 <body>
+  <!-- ===== Encabezado / Navegación ===== -->
   <header>
-    <h1>Contáctanos</h1>
-    <nav>
-      <a href="index.html">Inicio</a> |
-      <a href="formulario.html">Formulario</a> |
-      <a href="nosotros.html">Nosotros</a> |
-      <a href="ofertas.html">Ofertas</a> |
-      <a href="contacto.html">Contacto</a>
+    <nav class="navbar">
+      <h2 class="logo">🌸 Rosabella</h2>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#comentarios">Comentarios</a></li>
+        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="#dedicamos">A Qué Nos Dedicamos</a></li>
+        <li><a href="#mision-vision">Misión y Visión</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- ===== Contenido principal ===== -->
   <main>
-    <section>
-      <h2>Envíanos un mensaje</h2>
-      <form action="#" method="post" class="form-contacto">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+    <section class="contenedor" style="margin-top:150px;">
+      <h1>Contáctanos</h1>
+      <p>¿Tienes alguna pregunta, pedido especial o deseas cotizar un arreglo floral?  
+      ¡Envíanos un mensaje! Te responderemos lo antes posible 🌷</p>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+      <form class="formulario">
+        <div class="campo">
+          <input type="text" name="nombre" id="nombre" required>
+          <label for="nombre">Nombre completo</label>
+        </div>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <div class="campo">
+          <input type="email" name="correo" id="correo" required>
+          <label for="correo">Correo electrónico</label>
+        </div>
 
-        <button type="submit">Enviar</button>
+        <div class="campo">
+          <input type="text" name="mensaje" id="mensaje" required>
+          <label for="mensaje">Tu mensaje</label>
+        </div>
+
+        <button class="btn-registrar" type="submit">Enviar mensaje</button>
       </form>
     </section>
 
-    <section>
-      <h2>Ubicación</h2>
-      <p>Visítanos en nuestra tienda física:</p>
-      <p><strong>Dirección:</strong> Av. Juárez #123, Ciudad Juárez, Chihuahua</p>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.1028546549!2d-106.486!3d31.742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75967c9a3dfd3%3A0x4a62d50d6b2e8f8c!2sCiudad%20Ju%C3%A1rez!5e0!3m2!1ses-419!2smx!4v1700000000000"
-        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
+    <!-- ===== Mapa ===== -->
+    <section style="margin-top:80px;">
+      <h2 style="color:#fff; text-shadow:1px 1px 5px rgba(0,0,0,0.2);">Encuéntranos aquí</h2>
+      <div style="display:flex; justify-content:center; margin-top:20px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.224842830275!2d-106.48501668499133!3d31.735715981292708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e759c17cbf19a7%3A0x4de42b2c98e74bcd!2sCiudad%20Ju%C3%A1rez%2C%20Chih.%2C%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1697133600000!5m2!1ses!2smx"
+          width="600"
+          height="350"
+          style="border:0; border-radius:20px; box-shadow:0 4px 20px rgba(0,0,0,0.3);"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </section>
   </main>
-
-  <footer>
-    <p>© 2025 Abarrotes La Única - Todos los derechos reservados</p>
-  </footer>
 </body>
 </html>
